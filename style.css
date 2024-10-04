@@ -1,0 +1,38 @@
+/* reclaim wasted space on the side margins */
+
+@media (min-width: 768px) {
+  .section-corps {
+    margin: 0 2.5%;
+  }
+}
+
+
+/* Make PDF viewer for more comfort */
+
+#viewer-detailed > div:first-child .col-md-9 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+#viewer-detailed > div:first-child .viewer-content.active {
+  display: block;
+  height: 100%;
+  min-height: 800px;
+}
+
+
+
+/* change aspect of thumbnail */
+
+#list-thumbnail-viewer {
+  max-width: 40%;
+}
+
+#viewer-detailed > div:first-child .col-md-2 .thumbnail-viewer.active {
+  border: 2px solid #00005c;
+  cursor: default;
+}
+
+#viewer-detailed > div:first-child {
+  padding-top: 0px;
+}

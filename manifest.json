@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "ExtHALarge",
+  "version": "1.0",
+  "description": "Makes the PDF viewer bigger on HAL pages.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.hal.science/*"],
+      "js": ["extrhalarge.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
